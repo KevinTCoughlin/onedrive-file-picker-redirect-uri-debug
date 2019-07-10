@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>Test OneDrive File Picker redirectUri</title>
+    <script src="https://js.live.net/v7.2/OneDrive.debug.js"></script>
+    <script>
+        let clientId = 'CLIENT_ID';
+        var options = {
+            clientId: clientId,
+            advanced: {
+                redirectUri: "http://127.0.0.1:8080/auth.html"
+            },
+            success: (files) => console.log('success', files),
+            cancel: (error) => console.log('cancel', error),
+            error: (error) => console.log('error', error)
+        }
+
+        OneDrive.open(options);
+    </script>
+</head>
+<body>
+    <h1>Test OneDrive File Picker redirectUri</h1>
+</body>
+</html>

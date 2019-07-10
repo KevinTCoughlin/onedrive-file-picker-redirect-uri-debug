@@ -1,0 +1,11 @@
+{
+  "name": "file-picker-1077",
+  "version": "1.0.0",
+  "description": "Test OneDrive File Picker redirectUri",
+  "main": "index.js",
+  "author": "Kevin Coughlin",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
